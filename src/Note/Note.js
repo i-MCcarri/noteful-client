@@ -14,7 +14,7 @@ export default class Note extends React.Component {
 
   handleClickDelete = e => {
     e.preventDefault()
-    console.log('I deleted a note')
+    //console.log('I deleted a note')
     const noteId = this.props.id
 
     fetch(`${config.API_ENDPOINT}/notes/${noteId}`, {
@@ -43,7 +43,7 @@ export default class Note extends React.Component {
     return (
       <div className='Note'>
         <h2 className='Note__title'>
-          <Link to={`/noteful_notes/${id}`}>
+          <Link to={`/notes/${id}`}>
             {name}
           </Link>
         </h2>
@@ -61,7 +61,7 @@ export default class Note extends React.Component {
             Modified
             {' '}
             <span className='Date'>
-              {format(modified, 'DD MM YYYY')}
+              {format(modified, 'Do MMM YYYY')}
             </span>
           </div>
         </div>

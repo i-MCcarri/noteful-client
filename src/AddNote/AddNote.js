@@ -34,7 +34,7 @@ export default class AddNote extends Component {
       })
       .then(note => {
         this.context.addNote(note)
-        this.props.history.push(`/notes/${note.folderId}`)
+        this.props.history.push(`/folder/${note.folderId}`)
       })
       .catch(error => {
         console.error({ error })
@@ -43,6 +43,7 @@ export default class AddNote extends Component {
 
   render() {
     const { folders=[] } = this.context
+    console.log(folders)
     return (
       <section className='AddNote'>
         <h2>Create a note</h2>
