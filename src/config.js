@@ -1,3 +1,3 @@
 module.exports = {
-  API_ENDPOINT: 'https://stark-headland-22626.herokuapp.com',
+  API_ENDPOINT: 'https://powerful-sierra-91534.herokuapp.com/',
 };
