@@ -1,5 +1,3 @@
 module.exports = {
-  API_ENDPOINT: 'http://localhost:8000',
+  API_ENDPOINT: 'https://stark-headland-22626.herokuapp.com',
 };
-
-//https://stark-headland-22626.herokuapp.com
